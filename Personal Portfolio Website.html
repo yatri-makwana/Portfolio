@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/index.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="./Personal Portfolio Website_files/style.css">
+    <link href="./Personal Portfolio Website_files/boxicons.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <a href="http://127.0.0.1:5500/index.html#" class="logo">Yatri.</a>
+      <nav class="navbar">
+      <a href="http://127.0.0.1:5500/index.html#" class="active">Home</a>
+      <a href="http://127.0.0.1:5500/index.html#">About</a>
+      <a href="http://127.0.0.1:5500/index.html#">Services</a>
+      <a href="http://127.0.0.1:5500/index.html#">Portfolio</a>
+      <a href="http://127.0.0.1:5500/index.html#">Contact Me</a>
+      </nav>
+    </header>
+    <section class="home">
+      <div class="home-content">
+        <h1>Hi. I'm Yatri Makwana</h1>
+        <h3>Learning Developing</h3>
+        <p>Aspiring web developer eager to build dynamic, responsive websites. Learning HTML, CSS, and JavaScript to create user-friendly digital experiences from scratch. Passionate about coding!
+</p>
+        <div class="btn-box">
+          <a href="http://127.0.0.1:5500/index.html#">Hire Me</a>
+          <a href="http://127.0.0.1:5500/index.html#">Let's Talk</a>
+        </div>
+      </div>
+      <div class="home-sci">
+        <a href="http://127.0.0.1:5500/index.html#"><i class="bx bxl-linkedin"></i></a>
+        <a href="http://127.0.0.1:5500/index.html#"><i class="bx bxl-twitter"></i></a>
+        <a href="http://127.0.0.1:5500/index.html#"><i class="bx bxl-whatsapp"></i></a>
+      </div>
+    </section>
+    <img src="./Personal Portfolio Website_files/1.png" class="imggg" width="50%" height="50%">
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
