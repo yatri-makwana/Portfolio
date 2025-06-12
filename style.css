@@ -1,165 +1,249 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-}
-body {
-    background: #081b29;
-    color: #ededed;
-}
-.header{
-    position: fixed;
-    top:0;
-    left: 0;
-    width: 100%;
-    padding: 30px;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
-.logo{
-    font-size: 25px;
-    color: #ededed;
-    text-decoration: none;
-    font-weight: 600;
-}
-.navbar a{
-    font-size: 18px;
-    color: #ededed;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: .3s;
-}
-nav.navbar a:hover, nav.navbar a.active {
-    color: #00abf0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
-nav.navbar{
-    margin-right: 2cm;
+
+body {
+  background: #081b29;
+  color: #ededed;
 }
-.home{
-    height: 100px;
-    display: flex;
-    align-items: center;
-    padding: 0 10%;
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 10%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 }
-.home-content{
-    margin-top: 500px;
+
+.logo {
+  font-size: 25px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
 }
-.home-content h1{
-    font-size: 56px;
-    font-weight: 700;
+
+.navbar a {
+  font-size: 18px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 0.3s;
 }
-.home-content h3{
-    line-height: 1.5;
-    font-size: 32px;
-    font-weight: 700;
-    color:#00abf0;
+
+.navbar a:hover,
+.navbar a.active {
+  color: #00abf0;
 }
-.home-content p{
-    font-size: 16px;
-    margin: 19px 540px 40px 0px;
+
+/* Home Section */
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  flex-wrap: wrap;
+  gap: 40px;
 }
-.home-content .btn-box{
-    display: flex;
-    justify-content: space-between;
-    width: 345px;
-    height: 50px;
+
+.home-content {
+  max-width: 600px;
 }
-.btn-box a{
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 100%;
-    background: #00abf0;
-    border: 2px solid #00abf0;
-    border-radius: 8px;
-    font-size: 19px;
-    color:#081b29;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    z-index: 1;
-    overflow:hidden;
-    transition: .5s;
+
+.home-content h1 {
+  font-size: 56px;
+  font-weight: 700;
 }
-.btn-box a:hover{
-    color: #00abf0;
+
+.home-content h3 {
+  line-height: 1.5;
+  font-size: 32px;
+  font-weight: 700;
+  color: #00abf0;
 }
-.btn-box a:nth-child(2){
-    background: transparent;
-    color: #00abf0;
+
+.home-content p {
+  font-size: 16px;
+  margin: 20px 0 40px;
 }
-.btn-box a:nth-child(2):hover{
-    background: transparent;
-    color: #081b29;
+
+/* Buttons */
+.btn-box {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
-.btn-box a:nth-child(2)::before{
-    background: #00abf0;
+
+.btn-box a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  background: #00abf0;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  font-size: 19px;
+  color: #081b29;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 1;
 }
+
+.btn-box a:hover {
+  color: #00abf0;
+}
+
+.btn-box a:nth-child(2) {
+  background: transparent;
+  color: #00abf0;
+}
+
+.btn-box a:nth-child(2):hover {
+  color: #081b29;
+}
+
 .btn-box a::before {
-    content:'';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #081b29;
-    z-index: -1;
-    transition: .5s;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #081b29;
+  z-index: -1;
+  transition: 0.5s;
 }
-.btn-box a:hover::before{
-    width: 100%;
+
+.btn-box a:nth-child(2)::before {
+  background-color: #00abf0;
 }
-.home-sci{
-    position: absolute;
-    bottom: 40px;
-    width: 170px;
-    display: flex;
-    justify-content: space-between;
+
+.btn-box a:hover::before {
+  width: 100%;
 }
-.home-sci a{
-    position: relative;
-    display: inline-flex;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid #00abf0;
-    border-radius: 50%;
-    font-size: 20px;
-    color: #00abf0;
-    text-decoration: none;
+
+/* Social Icons */
+.home-sci {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.home-sci a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #00abf0;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #00abf0;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.home-sci a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #00abf0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.home-sci a:hover {
+  color: #081b29;
+}
+
+.home-sci a:hover::before {
+  width: 100%;
+}
+
+/* Image */
+.imggg {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
-}
-.home-sci a:hover{
-    color: #081b29;
-}
-.home-sci a::before{
-    content:'';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #00abf0;
-    z-index: -1;
-    transition: .5s;
-}
-.home-sci a:hover::before{
+    text-align: center;
+    padding: 80px 20px 20px;
+    height: auto;
+  }
+
+  .home-content h1 {
+    font-size: 32px;
+  }
+
+  .home-content h3 {
+    font-size: 24px;
+  }
+
+  .home-content p {
+    font-size: 14px;
+    margin: 15px 0 30px;
+    padding: 0 10px;
+  }
+
+  .btn-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
     width: 100%;
-}
-.imggg{
-    display: flex;
-    margin-left: 760px;
+  }
+
+  .btn-box a {
+    width: 80%;
+  }
+
+  .home-sci {
+    justify-content: center;
+  }
+
+  .imggg {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .navbar {
+    display: none; /* You can implement hamburger menu here */
+  }
+
+  .header {
+    padding: 20px;
+  }
 }
